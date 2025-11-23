@@ -1,0 +1,44 @@
+/* src/pages/ProjectsPage.css */
+
+.projects-section {
+  padding: 60px 20px;
+  min-height: calc(100vh - 80px); /* Header yüksekliği çıkarıldı */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color, border-radius, box-shadow satırları burada olmamalı */
+}
+
+.projects-section h2 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #ffffff; /* Başlık rengi */
+  text-shadow: 0 0 5px #6e6e6c, 0 0 10px #6e6e6c; /* Fosforlu efekt istersen */
+  /* animation: neon-glow 1.5s ease-in-out infinite alternate; */
+}
+
+/* @keyframes neon-glow (istersen ekleyebilirsin) */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Esnek grid yapısı */
+  gap: 30px; /* Proje kartları arası boşluk */
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Medya sorgusu, mobil cihazlar için tek sütun */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 40px 15px;
+  }
+
+  .projects-section h2 {
+    font-size: 2.5em;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Tek sütun */
+    gap: 20px;
+  }
+}

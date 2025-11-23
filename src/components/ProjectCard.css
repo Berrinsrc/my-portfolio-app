@@ -1,0 +1,110 @@
+/* src/components/ProjectCard.css */
+
+.project-card {
+  /* Genel kutucuk stilleri */
+  background-color: #2a466a; /* Arka plan rengi (anasayfa ile aynı) */
+  border: 2px solid #6e6e6c; /* Sarı dış çerçeve */
+  border-radius: 20px; /* Oval köşeler */
+  padding: 25px;
+  text-align: left;
+  color: #ffffff; /* Yazı rengi */
+
+  /* İçeriğe göre boyunun uzaması için esneklik */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* İçeriği yukarıda, butonu aşağıda tutar */
+  height: auto; /* İçeriğe göre otomatik yükseklik */
+  min-height: 250px; /* Minimum yükseklik verebiliriz */
+  width: 350px; /* Belirli genişlik (örnek: 350px, isteğe göre ayarla) */
+  max-width: 100%; /* Mobil uyumluluk için */
+
+  /* Fosforlu yanıp sönen efekt */
+  box-shadow: 0 0 10px rgba(88, 188, 255, 0.5), /* Hafif sarı gölge (fosfor) */
+              0 0 20px rgba(88, 188, 255, 0.5); /* Daha geniş sarı gölge */
+  animation: project-card-glow 2s infinite alternate; /* Fosforlu yanıp sönme animasyonu */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti için */
+}
+
+/* Fosforlu yanıp sönme animasyonu */
+@keyframes project-card-glow {
+  from {
+    box-shadow: 0 0 10px rgba(88, 188, 255, 0.5),
+                0 0 20px rgba(88, 188, 255, 0.5),
+                0 0 30px rgba(88, 188, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 15px rgba(88, 188, 255, 0.5),
+                0 0 30px rgba(88, 188, 255, 0.5),
+                0 0 50px rgba(88, 188, 255, 0.5);
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-8px); /* Üzerine gelince biraz daha yukarı kayar */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), /* Üzerine gelince daha belirgin sarı gölge */
+              0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+.project-card h3 {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Açıklamanın boş alanı doldurmasını sağlar, butonu aşağı iter */
+}
+
+/* Teknolojiler kutucukları */
+.technologies-container {
+  display: flex;
+  flex-wrap: wrap; /* Etiketlerin sığmadığında alt satıra geçmesini sağlar */
+  gap: 8px; /* Etiketler arası boşluk */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+.tech-badge {
+  background-color: rgba(48, 46, 48, 0.15); /* Hafif şeffaf sarı arkaplan */
+  color: #c2c1bd; /* Sarı yazı */
+  padding: 6px 12px;
+  border-radius: 5px; /* Minik kutucukların köşelerini ovalleştir */
+  font-size: 0.85em;
+  font-weight: 500;
+  border: 1px solid #2c2c2a; /* Sarı kenarlık */
+  white-space: nowrap; /* Teknoloji isimlerinin tek satırda kalmasını sağlar */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tech-badge:hover {
+  background-color: rgba(28, 28, 26, 0.3);
+  transform: translateY(-2px);
+}
+
+
+/* Buton ve Linkler */
+.project-actions {
+  margin-top: auto; /* Butonun her zaman en altta olmasını sağlar */
+  text-align: center;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: #395d8b; /* Mavi buton rengi */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px; /* Hafif oval buton */
+  text-decoration: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #395d8b; /* Koyu mavi */
+  transform: translateY(-3px); /* Hafif yukarı kayma efekti */
+}

@@ -1,0 +1,55 @@
+/* src/components/Header.css */
+.header {
+  background-color: #2a466a; /* Morcivert arka plan */
+  padding: 1rem 0;
+  color: #ffffff; /* Beyaz yazı */
+  text-align: center;
+  border-bottom: 1px solid #ffffff; /* Hafif bir alt çizgi */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+.site-title {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: font-size 0.3s ease; /* Yazı boyutu büyümesi için transition */
+}
+
+.site-title:hover {
+  font-size: 1.6rem; /* Üzerine gelince yazı boyutu büyümesi */
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px; /* Menü öğeleri arası boşluk */
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, font-size 0.3s ease; /* Font size transition eklendi */
+}
+
+.nav-links a:hover {
+  color: #ffffff; /* Hafif mavi tonu */
+  font-size: 1.1em; /* Üzerine gelince yazı boyutu büyümesi */
+}

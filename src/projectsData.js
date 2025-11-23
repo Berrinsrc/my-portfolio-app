@@ -1,4 +1,4 @@
-// src/projectsData.js
+
 
 const projects = [
   {
@@ -15,7 +15,7 @@ const projects = [
     technologies: ["HTML", "Tailwind CSS", "MySQL","PHP"],
     githubUrl: "https://github.com/berrinnur/ornek-proje-2",
   },
-  // Diğer projeler buraya
+  
 ];
 
 export default projects;

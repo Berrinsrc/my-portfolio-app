@@ -1,6 +1,4 @@
-/* src/index.css */
 
-/* Genel sıfırlamalar */
 * {
   margin: 0;
   padding: 0;
@@ -10,39 +8,38 @@
 html, body, #root {
   height: 100%;
   width: 100%;
-  font-family: 'Inter', sans-serif; /* Inter fontunu kullanıyoruz */
-  /* Morcivert arka plan rengi */
-  background-color: #395d8b; /* Koyu mor-mavi tonu */
-  color: #ffffff; /* Beyaz yazı rengi */
+  font-family: 'Inter', sans-serif; 
+ 
+  background-color: #395d8b; 
+  color: #ffffff; 
 }
 
 a {
-  color: #ffffff; /* Linkler de beyaz olsun */
+  color: #ffffff; 
   text-decoration: none;
 }
 
-/* Butonlar için genel stil */
 button {
-  background-color: #676766; /* Mavi tonu */
+  background-color: #676766; 
   color: white;
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
   font-size: 1.1em;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease; /* Font size transition eklendi */
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease; 
 }
 
 button:hover {
-  background-color: #525251; /* Koyu mavi tonu */
-  transform: scale(1.05); /* Üzerine gelince hafif büyüme */
-  font-size: 1.2em; /* Yazı boyutu büyümesi */
+  background-color: #525251;
+  transform: scale(1.05); 
+  font-size: 1.2em; 
 }
 
-/* Main içeriğinin esnek olmasını sağla */
+
 main {
-  flex-grow: 1; /* Ana içeriğin boş alanı doldurmasını sağlar */
-  display: flex; /* İçeriğin ortalanması için */
+  flex-grow: 1;
+  display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;

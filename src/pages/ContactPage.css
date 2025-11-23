@@ -1,15 +1,15 @@
-/* src/pages/ContactPage.css */
+
 
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 20px;
-  min-height: calc(100vh - 80px); /* Header yüksekliğine göre ayarlandı */
+  min-height: calc(100vh - 80px); 
 }
 
 .contact-content {
-  background-color: #2a466a; /* Arka plan rengi */
+  background-color: #2a466a; 
   border-radius: 15px;
   padding: 50px;
   max-width: 700px;
@@ -42,29 +42,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Küçük ekranlarda alt alta geçmesi için */
+  flex-wrap: wrap; 
 }
 
 .contact-label {
   font-size: 1.2em;
   font-weight: bold;
-  color: #ffffff; /* Sarı renk */
+  color: #ffffff; 
   margin-right: 15px;
 }
 
 .contact-link {
   font-size: 1.2em;
-  color: #ffffff; /* Mavi renk */
+  color: #ffffff; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #ffffff; /* Hover'da koyu mavi */
+  color: #ffffff; 
   text-decoration: underline;
 }
 
-/* Sosyal medya ikonları için stil (Hala kullanılıyorsa) */
+
 .social-links-contact {
     margin-top: 30px;
     display: flex;

@@ -1,19 +1,19 @@
-/* src/pages/HomePage.css */
+
 
 .hero-section {
   display: flex;
-  flex-direction: column; /* Mobil için dikey, masaüstü için yatay */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   padding: 80px 20px;
-  min-height: calc(100vh - 80px); /* Header yüksekliğine göre ayarlandı */
+  min-height: calc(100vh - 80px); 
   text-align: center;
-  gap: 50px; /* İçerik ve fotoğraf arası boşluk */
+  gap: 50px; 
 }
 
 @media (min-width: 768px) {
   .hero-section {
-    flex-direction: row; /* Masaüstünde yatay düzen */
+    flex-direction: row; 
     text-align: left;
   }
 }
@@ -24,22 +24,22 @@
 
 .hero-content h1 {
   font-size: 3em;
-  color: #ffffff; /* Beyaz yazı */
+  color: #ffffff; 
   margin-bottom: 10px;
 }
 
 .hero-content h2 {
   font-size: 2em;
-  color: #ffffff; /* Mavi tonu */
+  color: #ffffff; 
   margin-bottom: 7px;
-  min-height: 2.5em; /* Yazı animasyonu sırasında kaymayı engellemek için */
+  min-height: 2.5em; 
 }
 
-/* Yazı yazma animasyonu */
+
 .typewriter-text {
-  border-right: 2px solid #ffffff; /* Yanıp sönen imleç */
-  white-space: nowrap; /* Metnin tek satırda kalmasını sağlar */
-  overflow: hidden; /* Metnin taşmasını engeller */
+  border-right: 2px solid #ffffff; 
+  white-space: nowrap; 
+  overflow: hidden; 
   display: inline-block;
   vertical-align: bottom;
   animation: blink-caret 0.75s step-end infinite;
@@ -53,7 +53,7 @@
 
 .hero-content p {
   font-size: 1.1em;
-  color: #e0e0e0; /* Açıklama için hafif gri tonu */
+  color: #e0e0e0; 
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -62,13 +62,13 @@
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: center; /* Masaüstünde sola hizalı olsa da ikonları ortala */
+  justify-content: center; 
   gap: 20px;
 }
 
 @media (min-width: 768px) {
   .social-links {
-    justify-content: flex-start; /* Masaüstünde sola hizala */
+    justify-content: flex-start; 
   }
 }
 
@@ -80,48 +80,45 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* Üzerine gelince büyüme */
+  transform: scale(1.2); 
 }
 
-/* Profil fotoğrafı */
+
 .profile-image-container {
   width: 250px;
   height: 250px;
-  border-radius: 50%; /* Yuvarlak fotoğraf */
+  border-radius: 50%; 
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Parlak gölge */
-  flex-shrink: 0; /* Küçülmesini engelle */
-}
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+  flex-shrink: 0; 
 
 .profile-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fotoğrafın kutuya sığmasını sağlar */
+  object-fit: cover;
 }
 
-/* BURADAN İTİBAREN BUTON STİLLERİNİ DÜZELTTİK VE EKLEDİK */
+
 .call-to-action {
-  /* Temel Buton Görünümü */
-  display: inline-block; /* Genişliği içeriğine göre ayarla, margin alabilmesi için */
-  background-color: #2a466a; /* Mavi arka plan rengi */
-  color: white; /* Beyaz yazı rengi */
-  padding: 15px 30px; /* İç boşluk */
-  border: none; /* Kenarlık yok */
-  border-radius: 8px; /* Hafif oval köşeler */
-  text-decoration: none; /* Alt çizgiyi kaldır (ÇOK ÖNEMLİ) */
-  font-size: 1.1em; /* Yazı boyutu */
-  font-weight: bold; /* Yazıyı kalın yap */
-  cursor: pointer; /* Fare imlecini el işareti yap */
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti için geçişler */
-  margin-top: 20px; /* Sosyal ikonlarla arasına boşluk */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+ 
+  display: inline-block; 
+  background-color: #2a466a; 
+  color: white; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  font-size: 1.1em; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+  margin-top: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .call-to-action:hover {
-  background-color: #223752; /* Üzerine gelince koyu mavi */
-  transform: translateY(-3px); /* Hafif yukarı kayma efekti */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Hover'da gölgeyi artır */
+  background-color: #223752; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
 }
-
-/* Eğer sosyal linklerin altında tek başına duruyorsa, sadece .call-to-action yeterli. */
-/* Eğer gelecekte birden fazla buton eklemek istersen, bunları sarmalayan bir div ve o dive stil verebilirsin. */
+}

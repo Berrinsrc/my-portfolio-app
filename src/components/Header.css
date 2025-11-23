@@ -1,10 +1,10 @@
-/* src/components/Header.css */
+
 .header {
-  background-color: #2a466a; /* Morcivert arka plan */
+  background-color: #2a466a; 
   padding: 1rem 0;
-  color: #ffffff; /* Beyaz yazı */
+  color: #ffffff; 
   text-align: center;
-  border-bottom: 1px solid #ffffff; /* Hafif bir alt çizgi */
+  border-bottom: 1px solid #ffffff; 
 }
 
 .navbar {
@@ -24,11 +24,11 @@
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
-  transition: font-size 0.3s ease; /* Yazı boyutu büyümesi için transition */
+  transition: font-size 0.3s ease; 
 }
 
 .site-title:hover {
-  font-size: 1.6rem; /* Üzerine gelince yazı boyutu büyümesi */
+  font-size: 1.6rem; 
 }
 
 .nav-links {
@@ -39,17 +39,17 @@
 }
 
 .nav-links li {
-  margin-left: 30px; /* Menü öğeleri arası boşluk */
+  margin-left: 30px; 
 }
 
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease, font-size 0.3s ease; /* Font size transition eklendi */
+  transition: color 0.3s ease, font-size 0.3s ease; 
 }
 
 .nav-links a:hover {
-  color: #ffffff; /* Hafif mavi tonu */
-  font-size: 1.1em; /* Üzerine gelince yazı boyutu büyümesi */
+  color: #ffffff; 
+  font-size: 1.1em; 
 }
